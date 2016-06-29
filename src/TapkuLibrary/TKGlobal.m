@@ -34,7 +34,7 @@
 
 
 + (NSString*) fullBundlePath:(NSString*)bundlePath{
-	return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:bundlePath];
+	return [[[NSBundle bundleForClass:[self class]] resourcePath] stringByAppendingPathComponent:bundlePath];
 }
 
 
